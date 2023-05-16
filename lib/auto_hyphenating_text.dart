@@ -55,7 +55,7 @@ class AutoHyphenatingText extends StatelessWidget {
 		 // Only write the hyphen if the character is not punctuation
 		 String returnString = buffer.toString();
 		 if (returnString.isEmpty || !RegExp("\\p{P}", unicode: true).hasMatch(returnString[returnString.length - 1])) {
-			 return "$returnString‐";
+			 return "$returnString-";
 		 }
 
 		 return returnString;
